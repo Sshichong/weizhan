@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Expires" CONTENT="-1">           
+<meta http-equiv="Cache-Control" CONTENT="no-cache">           
+<meta http-equiv="Pragma" CONTENT="no-cache"> 
+<title>医学技术学院</title>
+<link rel="shortcut icon" href="../../favicon.ico" />
+<link rel="stylesheet" href="css/index.css" />
+<script src="/query/Public/js/jquery-2.1.3.min.js"/></script>
+</head>
+<body class="index1">
+	<div class="div1 clearfix">
+        <a href="index.html" class="w7"><img src="img/overview/b4.jpg" /></a>
+        <a class="w3"><img src="img/overview/b2.png" /></a>
+    </div>
+    <div class="clearfix box div1">
+    	<div class="flex">
+            <a href="http://www.zcmu.edu.cn/Col/Col14/Index.aspx" ><img src="img/overview/b3.png" /></a>
+            <a href="http://www.zcmu.edu.cn/Col/Col22/Index.aspx" class="w5"><img src="img/overview/b6.png" /></a>
+            <a href="img/overview/schoolmap.jpg" class="w5"><img src="img/overview/b7.png" /></a>
+        </div>
+        <div class="flex">
+             <a href="http://www.zcmu.edu.cn/Col/Col15/Index.aspx" class="w5"><img src="img/overview/b4.png" /></a>
+             <a href="http://www.zcmu.edu.cn/Col/Col19/Index.aspx" class="w5"><img src="img/overview/b5.png" /></a>
+             <a href="http://www.zcmu.edu.cn/Col/Col16/Index.aspx"><img src="img/overview/b8.png" /></a>
+        </div>
+    </div>
+ 
+   <div class="clearfix div1">
+        <a href="scene.html" class="w3"><img src="img/overview/b9.png" /></a>
+        <a href="http://www.zcmu.edu.cn/Col/Col38/Index.aspx" class="w3"><img src="img/overview/b10.png" /></a>
+        <a href="set.html" class="w3"><img src="img/overview/b11.png" /></a>
+    </div>
+	<div class='box_i4'></div>
+    <div class="footer-copy">医学技术学院©版权所有&emsp;&emsp;Powered By <a style='clear:both;display:inline-block;float:right;padding-top:0;color:#FFF;' href='#'>WeiXin Team</a></div>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+//微信分享
+wx.config({
+	debug:false,
+    appId: 'wxdb274c6639102d58',
+	timestamp: '1510274844',
+	nonceStr: 'HlZUduqx7LAX6MAC',
+	signature: '5aced4c9c457c8d6d2e52b0a4607e202ef6e8a61',
+	jsApiList: [
+      // 所有要调用的 API 都要加到这个列表中
+	   'onMenuShareTimeline',
+	    'onMenuShareAppMessage',
+	    'onMenuShareQQ',
+	    'onMenuShareWeibo',
+    ]
+    /*jsApiList: [
+      'checkJsApi',
+      'onMenuShareTimeline',
+      'onMenuShareAppMessage',
+      'onMenuShareQQ',
+      'onMenuShareWeibo',
+      'hideOptionMenu',
+      'showOptionMenu',
+    ]*/
+});
+wx.ready(function () {
+    // 在这里调用 API
+	wx.onMenuShareTimeline({
+		title: '欢迎来到丽水学院', // 分享标题
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl:'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+	
+	wx.onMenuShareAppMessage({
+		title: '欢迎来到丽水学院', // 分享标题
+		desc: '丽水学院(www.lsu.edu.cn)是一所公办全日制普通本科高校，地处素有“秀山丽水，养生福地”的国家级生态示范区', // 分享描述
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl: 'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		type: '', // 分享类型,music、video或link，不填默认为link
+		dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+	
+	wx.onMenuShareQQ({
+		title: '欢迎来到丽水学院', // 分享标题
+		desc: '丽水学院(www.lsu.edu.cn)是一所公办全日制普通本科高校，地处素有“秀山丽水，养生福地”的国家级生态示范区', // 分享描述
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl: 'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		success: function () { 
+		   // 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+		   // 用户取消分享后执行的回调函数
+		}
+	});
+	wx.onMenuShareWeibo({
+		title: '欢迎来到丽水学院', // 分享标题
+		desc: '丽水学院(www.lsu.edu.cn)是一所公办全日制普通本科高校，地处素有“秀山丽水，养生福地”的国家级生态示范区', // 分享描述
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl:'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		success: function () { 
+		   // 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+  });
+
+</script>
+	
+</body>
+
+</html>

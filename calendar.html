@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Expires" CONTENT="-1">           
+<meta http-equiv="Cache-Control" CONTENT="no-cache">           
+<meta http-equiv="Pragma" CONTENT="no-cache"> 
+<title>医学技术学院</title>
+<link rel="stylesheet" href="css/index.css" />
+<script src="/query/Public/js/jquery-2.1.3.min.js"/></script>
+</head>
+<body class="fff">
+	<div class="body">
+        <header>
+            <a href="index.html" class="logo"><img src="img/calendar/logo.jpg"  /></a>
+            <a href="index.html" class="home"><img src="img/calendar/home.png" /></a>
+        </header>
+        <div class="title">
+            <span><img src="img/calendar/icon24.png" style="vertical-align:-0.3rem">校历</span>
+            <a href="javascript:history.back()"><img src="img/calendar/back.png" />返回</a>
+        </div>
+        <div class="div-xl">
+            <p>2016-2017学年第1学期校历</p>
+            <img src="img/calendar/xiaoli.jpg" />
+           <!-- <p>2016-2017学年第2学期校历</p>
+            <img src="img/calendar/xl2.jpg" />-->
+        </div>
+    </div>
+     <footer style="position:fixed">
+    <p class="p1">医学技术学院©版权所有&emsp;&emsp;Powered By  <a style='clear:both;display:inline-block;padding-top:0;' href='#'>WeiXin Team</a></p>
+</footer>
+	  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+//微信分享
+wx.config({
+	debug:false,
+    appId: 'wxdb274c6639102d58',
+	timestamp: '1510272945',
+	nonceStr: 'dAtnN7kUXYS3ZJTQ',
+	signature: '6f028eed6242d7996c5a30149ebb003ae0b08006',
+	jsApiList: [
+      // 所有要调用的 API 都要加到这个列表中
+	   'onMenuShareTimeline',
+	    'onMenuShareAppMessage',
+	    'onMenuShareQQ',
+	    'onMenuShareWeibo',
+    ]
+    /*jsApiList: [
+      'checkJsApi',
+      'onMenuShareTimeline',
+      'onMenuShareAppMessage',
+      'onMenuShareQQ',
+      'onMenuShareWeibo',
+      'hideOptionMenu',
+      'showOptionMenu',
+    ]*/
+});
+wx.ready(function () {
+    // 在这里调用 API
+	wx.onMenuShareTimeline({
+		title: '欢迎来到丽水学院', // 分享标题
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl:'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+	
+	wx.onMenuShareAppMessage({
+		title: '欢迎来到丽水学院', // 分享标题
+		desc: '丽水学院(www.lsu.edu.cn)是一所公办全日制普通本科高校，地处素有“秀山丽水，养生福地”的国家级生态示范区', // 分享描述
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl: 'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		type: '', // 分享类型,music、video或link，不填默认为link
+		dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+	
+	wx.onMenuShareQQ({
+		title: '欢迎来到丽水学院', // 分享标题
+		desc: '丽水学院(www.lsu.edu.cn)是一所公办全日制普通本科高校，地处素有“秀山丽水，养生福地”的国家级生态示范区', // 分享描述
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl: 'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		success: function () { 
+		   // 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+		   // 用户取消分享后执行的回调函数
+		}
+	});
+	wx.onMenuShareWeibo({
+		title: '欢迎来到丽水学院', // 分享标题
+		desc: '丽水学院(www.lsu.edu.cn)是一所公办全日制普通本科高校，地处素有“秀山丽水，养生福地”的国家级生态示范区', // 分享描述
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl:'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		success: function () { 
+		   // 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+  });
+
+</script>
+</body>
+</html>

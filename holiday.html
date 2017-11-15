@@ -1,0 +1,131 @@
+<html lang="zh-CN" style="font-size: 21.4063px;"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Expires" content="-1">           
+<meta http-equiv="Cache-Control" content="no-cache">           
+<meta http-equiv="Pragma" content="no-cache"> 
+<title>医学技术学院</title>
+<link rel="stylesheet" href="css/index.css">
+<script src="/query/Public/js/jquery-2.1.3.min.js"></script>
+</head>
+<body class="fff">
+	<div class="body">
+        <header>
+            <a href="index.html" class="logo"><img src="img/holiday/logo.jpg"></a>
+            <a href="index.html" class="home"><img src="img/holiday/home.png"></a>
+        </header>
+        <div class="title">
+            <span><img src="img/holiday/icon20.png" style="width:1.5rem">节假日安排</span>
+            <a href="javascript:history.back()"><img src="img/holiday/back.png">返回</a>
+        </div>
+        <section class="tab-con">
+    
+            <div class="table-con">
+                <p class="font_blue h font16">国务院办公厅关于2016年部分节假日安
+    排的通知（国办发明电〔2015〕18号）</p>
+      各省、自治区、直辖市人民政府，国务院各部委、各直属机构：<br>
+                  经国务院批准，现将2016年元旦、春节、清明节、劳动节、端午节、中秋节和国庆节放假调休日期的具体安排通知如下。<br>
+      一、元旦：1月1日放假，与周末连休。<br>
+      二、春节：2月7日至13日放假调休，共7天。2月6日（星期六）、2月14日（星期日）上班。<br>
+      三、清明节：4月4日放假，与周末连休。<br>
+      四、劳动节：5月1日放假，5月2日（星期一）补休。<br>
+      五、端午节：6月9日至11日放假调休，共3天。6月12日（星期日）上班。<br>
+      六、中秋节：9月15日至17日放假调休，共3天。9月18日（星期日）上班<br>
+      七、国庆节：10月1日至7日放假调休，共7天。10月8日（星期六）、10月9日（星期日）上班。<br>
+    节假日期间，各地区、各部门要妥善安排好值班和安全、保卫等工作，遇有重大突发事件，要按规定及时报告并妥善处置，确保人民群众祥和平安度过节日假期。<br>
+                <p class="text-right font12">国务院办公厅 </p>
+                 <p class="text-right font12">2015年12月10日</p>
+    
+            </div>
+        </section>
+    </div>
+     <footer style="position: static;">
+    <p class="p1">医学技术学院©版权所有  Powered By  <a style="clear:both;display:inline-block;padding-top:0;" href="#">WeiXin Team</a></p>
+</footer>
+	  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+//微信分享
+wx.config({
+	debug:false,
+    appId: 'wxdb274c6639102d58',
+	timestamp: '1510273858',
+	nonceStr: 'exfj9AGSx0KmEyxA',
+	signature: 'abff29d6abf96f46d77094d6cbb3ea855837eb80',
+	jsApiList: [
+      // 所有要调用的 API 都要加到这个列表中
+	   'onMenuShareTimeline',
+	    'onMenuShareAppMessage',
+	    'onMenuShareQQ',
+	    'onMenuShareWeibo',
+    ]
+    /*jsApiList: [
+      'checkJsApi',
+      'onMenuShareTimeline',
+      'onMenuShareAppMessage',
+      'onMenuShareQQ',
+      'onMenuShareWeibo',
+      'hideOptionMenu',
+      'showOptionMenu',
+    ]*/
+});
+wx.ready(function () {
+    // 在这里调用 API
+	wx.onMenuShareTimeline({
+		title: '欢迎来到丽水学院', // 分享标题
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl:'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+	
+	wx.onMenuShareAppMessage({
+		title: '欢迎来到丽水学院', // 分享标题
+		desc: '丽水学院(www.lsu.edu.cn)是一所公办全日制普通本科高校，地处素有“秀山丽水，养生福地”的国家级生态示范区', // 分享描述
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl: 'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		type: '', // 分享类型,music、video或link，不填默认为link
+		dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+	
+	wx.onMenuShareQQ({
+		title: '欢迎来到丽水学院', // 分享标题
+		desc: '丽水学院(www.lsu.edu.cn)是一所公办全日制普通本科高校，地处素有“秀山丽水，养生福地”的国家级生态示范区', // 分享描述
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl: 'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		success: function () { 
+		   // 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+		   // 用户取消分享后执行的回调函数
+		}
+	});
+	wx.onMenuShareWeibo({
+		title: '欢迎来到丽水学院', // 分享标题
+		desc: '丽水学院(www.lsu.edu.cn)是一所公办全日制普通本科高校，地处素有“秀山丽水，养生福地”的国家级生态示范区', // 分享描述
+		link: 'http://xmt.lsu.edu.cn/query/index.php', // 分享链接
+		imgUrl:'http://xmt.lsu.edu.cn/query/Public/images/share.png', 
+		success: function () { 
+		   // 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+  });
+
+</script>
+
+</body></html>
